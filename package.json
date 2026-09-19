@@ -1,0 +1,13 @@
+{
+  "name": "saddle-stitch-imposition",
+  "version": "1.0.0",
+  "description": "骑马钉小册子拼版预演 Web 应用",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test/imposition.test.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

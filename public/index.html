@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>骑马钉拼版预演</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>骑马钉小册子拼版预演</h1>
+  </header>
+
+  <section class="controls">
+    <label>
+      成品页数
+      <input type="number" id="pages" min="1" value="16">
+    </label>
+    <label>
+      每帖张数
+      <input type="number" id="sheets" min="1" value="2">
+    </label>
+    <label>
+      装订方向
+      <select id="binding">
+        <option value="left" selected>左装订</option>
+        <option value="right">右装订</option>
+      </select>
+    </label>
+    <label>
+      双面翻转
+      <select id="flip">
+        <option value="long" selected>长边翻转</option>
+        <option value="short">短边翻转</option>
+      </select>
+    </label>
+    <button id="generate">生成拼版</button>
+    <button id="export" disabled>导出拼版清单 JSON</button>
+  </section>
+
+  <section id="summary" class="summary"></section>
+  <section id="error" class="error" hidden></section>
+  <main id="canvas-list"></main>
+
+  <script src="app.js"></script>
+</body>
+</html>
